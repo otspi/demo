@@ -120,7 +120,7 @@
       </div>
 
       <div class="hero-actions">
-        <button type="button" class="btn-hero-learn" id="btn-hero-learn">
+        <button type="button" class="btn-hero-learn" id="btn-hero-learn" data-track="Démonstrateur|Comprendre|accueil">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"/>
             <line x1="12" y1="16" x2="12" y2="12"/>
@@ -150,7 +150,7 @@
 
     <!-- Onglets de navigation (Segmented Control) -->
     <nav class="nav-tabs" role="tablist">
-      <button class="nav-tab active" id="tab-stamp" role="tab" aria-selected="true" aria-controls="view-stamp">
+      <button class="nav-tab active" id="tab-stamp" data-track="Démonstrateur|Onglet|Horodater" role="tab" aria-selected="true" aria-controls="view-stamp">
         <span class="tab-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"/>
@@ -160,7 +160,7 @@
         <span class="tab-label-full">Horodater</span>
         <span class="tab-label-short">Horodater</span>
       </button>
-      <button class="nav-tab" id="tab-verify" role="tab" aria-selected="false" aria-controls="view-verify">
+      <button class="nav-tab" id="tab-verify" data-track="Démonstrateur|Onglet|Vérifier" role="tab" aria-selected="false" aria-controls="view-verify">
         <span class="tab-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -170,7 +170,7 @@
         <span class="tab-label-full">Vérifier une signature</span>
         <span class="tab-label-short">Vérifier</span>
       </button>
-      <button class="nav-tab" id="tab-toolbox" role="tab" aria-selected="false" aria-controls="view-toolbox">
+      <button class="nav-tab" id="tab-toolbox" data-track="Démonstrateur|Onglet|Boîte à outils" role="tab" aria-selected="false" aria-controls="view-toolbox">
         <span class="tab-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="4 17 10 11 4 5"/>
@@ -180,7 +180,7 @@
         <span class="tab-label-full">Boîte à outils</span>
         <span class="tab-label-short">Outils</span>
       </button>
-      <button class="nav-tab" id="tab-learn" role="tab" aria-selected="false" aria-controls="view-learn">
+      <button class="nav-tab" id="tab-learn" data-track="Démonstrateur|Onglet|Comprendre" role="tab" aria-selected="false" aria-controls="view-learn">
         <span class="tab-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
@@ -240,7 +240,7 @@
         </div>
       </div>
 
-      <button class="primary" id="submit-btn" disabled>
+      <button class="primary" id="submit-btn" data-track="Démonstrateur|Horodater|lancer" disabled>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="10"/>
           <polyline points="12 6 12 12 16 14"/>
@@ -320,14 +320,14 @@
         <div class="result-header" id="result-header"></div>
         <div class="result-body" id="result-body"></div>
         <div class="actions" style="padding: 0 1.5rem 1.5rem;">
-          <button class="action-primary" id="preview-pdf-btn" hidden style="background:var(--brand-primary); border-color:var(--brand-primary);">
+          <button class="action-primary" id="preview-pdf-btn" data-track="Démonstrateur|Horodater|aperçu PDF" hidden style="background:var(--brand-primary); border-color:var(--brand-primary);">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
               <circle cx="12" cy="12" r="3"/>
             </svg>
             <span>Aperçu du PDF</span>
           </button>
-          <button class="action-primary" id="download-pdf-btn" hidden>
+          <button class="action-primary" id="download-pdf-btn" data-track="Démonstrateur|Horodater|télécharger PDF" hidden>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
@@ -335,14 +335,14 @@
             </svg>
             <span>Télécharger le PDF horodaté (.pdf)</span>
           </button>
-          <button class="secondary" id="download-btn" hidden>
+          <button class="secondary" id="download-btn" data-track="Démonstrateur|Horodater|télécharger jeton" hidden>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
             </svg>
             <span>Télécharger le jeton brut (.tsr)</span>
           </button>
-          <button class="secondary" id="download-receipt-btn" hidden>
+          <button class="secondary" id="download-receipt-btn" data-track="Démonstrateur|Horodater|télécharger reçu" hidden>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
@@ -386,7 +386,7 @@
       
       <div class="file-info" id="verify-file-info"></div>
 
-      <button class="primary" id="verify-btn" disabled>
+      <button class="primary" id="verify-btn" data-track="Démonstrateur|Vérifier|lancer" disabled>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           <polyline points="9 12 11 14 15 10"/>
@@ -455,14 +455,14 @@
         <div class="result-header" id="verify-result-header"></div>
         <div class="result-body" id="verify-result-body"></div>
         <div class="actions" style="padding: 0 1.5rem 1.5rem;">
-          <button class="action-primary" id="verify-preview-pdf-btn" hidden style="background:var(--brand-primary); border-color:var(--brand-primary);">
+          <button class="action-primary" id="verify-preview-pdf-btn" data-track="Démonstrateur|Vérifier|aperçu PDF" hidden style="background:var(--brand-primary); border-color:var(--brand-primary);">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
               <circle cx="12" cy="12" r="3"/>
             </svg>
             <span>Aperçu du PDF</span>
           </button>
-          <button class="action-primary" id="verify-export-tsr-btn" hidden>
+          <button class="action-primary" id="verify-export-tsr-btn" data-track="Démonstrateur|Vérifier|exporter jeton" hidden>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
@@ -470,7 +470,7 @@
             </svg>
             <span>Exporter le jeton extrait (.tsr)</span>
           </button>
-          <button class="secondary" id="verify-download-receipt-btn" hidden>
+          <button class="secondary" id="verify-download-receipt-btn" data-track="Démonstrateur|Vérifier|télécharger reçu" hidden>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
@@ -583,7 +583,7 @@
               <dt>Algorithmes :</dt><dd id="tsa-algorithms">-</dd>
             </dl>
             <div class="actions" style="margin-top: 1.5rem;">
-              <button class="action-primary" id="download-cert-btn">
+              <button class="action-primary" id="download-cert-btn" data-track="Démonstrateur|Boîte à outils|télécharger certificat">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                   <polyline points="7 10 12 15 17 10"/>
@@ -607,10 +607,10 @@
           </h3>
           <p>Snippets prêts à l'emploi pour horodater et vérifier vos documents depuis votre terminal.</p>
           <div class="cli-tabs">
-            <button class="cli-tab-btn active" data-target="cli-curl-json">cURL (JSON)</button>
-            <button class="cli-tab-btn" data-target="cli-curl-rfc">OpenSSL (RFC 3161)</button>
-            <button class="cli-tab-btn" data-target="cli-pyhanko">pyHanko (PDF)</button>
-            <button class="cli-tab-btn" data-target="cli-pdfsig">pdfsig (Linux)</button>
+            <button class="cli-tab-btn active" data-target="cli-curl-json" data-track="Démonstrateur|Ligne de commande|cURL (JSON)">cURL (JSON)</button>
+            <button class="cli-tab-btn" data-target="cli-curl-rfc" data-track="Démonstrateur|Ligne de commande|OpenSSL">OpenSSL (RFC 3161)</button>
+            <button class="cli-tab-btn" data-target="cli-pyhanko" data-track="Démonstrateur|Ligne de commande|pyHanko">pyHanko (PDF)</button>
+            <button class="cli-tab-btn" data-target="cli-pdfsig" data-track="Démonstrateur|Ligne de commande|pdfsig">pdfsig (Linux)</button>
           </div>
           <div class="terminal-window">
             <div class="terminal-header">
@@ -627,7 +627,7 @@
                 <pre><code id="code-curl-json">curl -X POST https://api.staging.open-eidas.eu/api/v1/timestamp \
   -H "Content-Type: application/json" \
   -d '{"hash": "VOTRE_HASH_SHA256", "algorithm": "sha256"}'</code></pre>
-                <button class="btn-copy cli-copy-btn" data-target="code-curl-json">
+                <button class="btn-copy cli-copy-btn" data-target="code-curl-json" data-track="Démonstrateur|Copier la commande|cURL (JSON)">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
@@ -646,7 +646,7 @@ curl -H "Content-Type: application/timestamp-query" \
 
 # 3. Vérifier le jeton avec la chaîne
 openssl ts -verify -in response.tsr -data document.pdf -CAfile chain.pem</code></pre>
-                <button class="btn-copy cli-copy-btn" data-target="code-curl-rfc">
+                <button class="btn-copy cli-copy-btn" data-target="code-curl-rfc" data-track="Démonstrateur|Copier la commande|OpenSSL">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
@@ -657,7 +657,7 @@ openssl ts -verify -in response.tsr -data document.pdf -CAfile chain.pem</code><
               <div class="cli-pane" id="cli-pyhanko">
                 <pre><code id="code-pyhanko"># Vérifier toutes les signatures et horodatages PAdES d'un PDF
 pyhanko check-sig document-horodate.pdf</code></pre>
-                <button class="btn-copy cli-copy-btn" data-target="code-pyhanko">
+                <button class="btn-copy cli-copy-btn" data-target="code-pyhanko" data-track="Démonstrateur|Copier la commande|pyHanko">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
@@ -668,7 +668,7 @@ pyhanko check-sig document-horodate.pdf</code></pre>
               <div class="cli-pane" id="cli-pdfsig">
                 <pre><code id="code-pdfsig"># Examiner les champs de signature et d'horodatage (Poppler)
 pdfsig -nocert document-horodate.pdf</code></pre>
-                <button class="btn-copy cli-copy-btn" data-target="code-pdfsig">
+                <button class="btn-copy cli-copy-btn" data-target="code-pdfsig" data-track="Démonstrateur|Copier la commande|pdfsig">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
@@ -705,7 +705,7 @@ pdfsig -nocert document-horodate.pdf</code></pre>
             <div class="result-header" id="tsq-result-header"></div>
             <div class="result-body" id="tsq-result-body"></div>
             <div class="actions" style="padding: 0 1.25rem 1.25rem;">
-              <button class="action-primary" id="tsq-download-btn" hidden>
+              <button class="action-primary" id="tsq-download-btn" data-track="Démonstrateur|Boîte à outils|télécharger requête" hidden>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 <span>Télécharger le jeton obtenu (.tsr)</span>
               </button>
